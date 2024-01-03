@@ -104,13 +104,14 @@ body {
     border: 1px solid #ccc;
     /* flex-direction: column; */
     /* margin-bottom: 9.3rem; */
-    padding: 0rem 0rem 10rem 0rem;
+    /* padding: 0rem 0rem 10rem 0rem; */
     box-sizing: border-box;
     width: 100%;
     align-items: flex-start;
     background-color: #d9d9d9;
     border-radius: 2rem;
     /* flex-shrink: 0; */
+    cursor: pointer;
 }
 
 .section-tab {
@@ -118,7 +119,7 @@ body {
     justify-content: space-between;
     border: 1px solid #ccc;
     /* flex-direction: column; */
-    margin-bottom: 9.3rem;
+    /* margin-bottom: 9.3rem; */
     padding: 2.278rem 0% 2.278rem 3.8rem;
     box-sizing: border-box;
     width: 100%;
@@ -165,7 +166,7 @@ body {
     }
 }
 
-.section-more {
+.section .section-more {
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.2125;
@@ -175,6 +176,24 @@ body {
         margin-bottom: 40px;
         padding: 2.278rem 20% 2.278rem 2.5rem;
     }
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out;
+}
+
+.section:hover .section-more {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2125;
+    color: #000000;
+    flex-shrink: 0;
+    p {
+        margin-bottom: 40px;
+        padding: 2.278rem 20% 2.278rem 4rem;
+    }
+    max-height: 400px;
+    overflow: auto;
+    transition: max-height 0.3s ease-in;
 }
 
 
@@ -204,5 +223,5 @@ body {
 }
 
 .page-button {
-    scale: 0.5;
+    scale: 0.4;
 }
