@@ -43,21 +43,14 @@
 
                 </div>
                 <div class="section-more ">
-                    <p><a href="# ">Article</a></p>
-                    <p>Topic: Ví dụ này sẽ tự động ra mở rộng xuống dưới khi hover để in conten bên trong ra bấm được nhấn, nó sẽ thay đổi kích thước thành một hình chữ nhật có kích thước 400pixel và hiển thị phần tử văn bản có id là "content ". </p>
-                    <p>Speakers: </p>
-                    <p>Topic: Ví dụ này sẽ tự động ra mở rộng xuống dưới khi hover để in conten bên trong ra bấm được nhấn, nó sẽ thay đổi kích thước thành một hình chữ nhật có kích thước 400pixel và hiển thị phần tử văn bản có id là "content ". </p>
+                    <p>List of Papers</p>
+                    <div th:each="papers : ${Papers}">
+                        <p th:text="${papers.name}"></p>
+                    </div>
+
                 </div>
             </div>
-            <!-- phần tử thứ 2: copy cái 1 xuống chỉnh sủa lại truyền tham số ... -->
         </div>
-        <!-- phân trang -->
-        <!-- <div class="pagination ">
-            <button class="page-button "><img  src="./assets/left.png " /></button>
-            <div class="page-active ">1</div>
-            <button class="page-button "><img  src="./assets/right.png " /></button>
-        </div> -->
-    </div>
 </body>
 
 </html>

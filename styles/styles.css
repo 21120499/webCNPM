@@ -99,11 +99,11 @@ body {
 .section {
     border: 1px solid #ccc;
     box-sizing: border-box;
-    width: 100%;
+    width: 1300px;
     align-items: flex-start;
     background-color: #d9d9d9;
     border-radius: 2rem;
-    /* flex-shrink: 0; */
+    /* flex-shrink: 1; */
     cursor: pointer;
     /* FONT */
     font-size: 2rem;
@@ -114,11 +114,12 @@ body {
 
 .section-tab {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     border: 1px solid #ccc;
     padding: 2.278rem 0% 2.278rem 3.8rem;
     box-sizing: border-box;
-    background-color: #d9d9d9;
+    /* background-color: #d9d9d9; */
     border-radius: 2rem;
     p {
         margin-bottom: 20px;
@@ -149,8 +150,8 @@ body {
 .section-more {
     flex-shrink: 0;
     p {
-        margin-bottom: 10px;
-        padding: 1rem 3% 1rem 4rem;
+        margin-bottom: 100px;
+        padding: 1rem 3% 2rem 4rem;
     }
     max-height: 0;
     overflow: hidden;
@@ -167,34 +168,3 @@ body {
     overflow: auto;
     transition: max-height 0.3s ease-in;
 }
-
-
-/* ------------------PAGINATION------------------------- */
-
-
-/* .pagination {
-    margin-left: 93.8rem;
-    height: 8.156rem;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.page-active {
-    width: 7.9294rem;
-    height: 100%;
-    display: flex;
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.4;
-    color: #ffffff;
-    white-space: nowrap;
-    align-items: center;
-    justify-content: center;
-    background-color: #2770ff;
-    border-radius: 6.117rem;
-}
-
-.page-button {
-    scale: 0.4;
-} */
